@@ -58,7 +58,7 @@ function AppForm() {
 
                         <div className="divEmail">
                             <label htmlFor="email">Correo electrónico:</label>
-                            <Field type="email" name="email"></Field>
+                            <Field type="email" name="email" className="nombre"></Field>
                             <ErrorMessage name="email" component="p" />
                         </div>
                         </Spacer>
@@ -67,7 +67,7 @@ function AppForm() {
 
                         <div className="divMensaje">
                             <label htmlFor="message" className="cajaMensaje">Mensaje:</label>
-                            <Field component="textarea" value={values.message} name="message"></Field>
+                            <Field component="textarea" value={values.message} name="message" className="nombre"></Field>
                         </div>
                         </Spacer>
 

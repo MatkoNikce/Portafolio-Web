@@ -1,6 +1,6 @@
 import { } from 'react'
 import './App.css'
-import { Heading, Text, Box, Image, Divider, Button, ButtonGroup, ChakraProvider, Stack } from '@chakra-ui/react'
+import { Heading, Text, Box, Image, Divider, Button, ButtonGroup, ChakraProvider, Stack, Link} from '@chakra-ui/react'
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -32,7 +32,7 @@ function App() {
                 <Spacer>
 
                   <BreadcrumbItem margin={5} >
-                    <BreadcrumbLink href='#acercaDE'>ACERCA DE</BreadcrumbLink>
+                    <BreadcrumbLink href='#acercaDe'>ACERCA DE</BreadcrumbLink>
                   </BreadcrumbItem>
 
                 </Spacer>
@@ -70,12 +70,8 @@ function App() {
 
 
 
-                <Spacer>
-                  <BreadcrumbItem>
-                    <BreadcrumbLink href='#'>EN/ES</BreadcrumbLink>
-                  </BreadcrumbItem>
-                </Spacer>
-
+                
+                
               </Breadcrumb>
             </Spacer>
           </Flex>
@@ -95,7 +91,7 @@ function App() {
 
                 <Box  >
 
-                  <Image src='/src/assets/img/HablemosEspañol.png' alt='Matko' objectFit={'cover'} boxSize={200} borderRadius={'full'} border={2} borderColor={'blackAlpha.100'}/>
+                  <Image src='/src/assets/img/HablemosEspañol.png' alt='Matko' objectFit={'cover'} boxSize={200} borderRadius={'full'} border={2} borderColor={'blackAlpha.100'} />
 
                 </Box>
                 <Box>
@@ -181,7 +177,7 @@ function App() {
           <Image src='/src/assets/img/LETS TALK.png' alt='Matko' maxW={'2xl'} />
 
           {/* CARTAS DE TESIMONIOS */}
-          <Heading fontSize={150} id='habilidades' mb={10}>TESTIMONIOS</Heading>
+          <Heading fontSize={150} id='testimonios' mb={10}>TESTIMONIOS</Heading>
           <Flex justifyContent={'space-between'}>
 
             <Card maxW='sm'>
@@ -244,7 +240,7 @@ function App() {
           <Flex flexDirection={'column'} alignItems={'center'} mt={10}>
 
             <Text color={'#434343'} id='contacto'>Contáctame</Text>
-            <Heading fontSize={50} mb={10}>MATKONIKCE@GMAIL.COM</Heading>
+            <Heading fontSize={50} mb={10} color={'#434343'}>MATKONIKCE@GMAIL.COM</Heading>
 
           </Flex>
 
@@ -295,9 +291,9 @@ function App() {
               <Spacer>
                 <Breadcrumb separator=''>
                   <BreadcrumbItem >
-                    <BreadcrumbLink href='#inicio' >Inicio de página</BreadcrumbLink>
+                    <BreadcrumbLink href='#inicio' color={'#434343'} >Inicio de página</BreadcrumbLink>
                   </BreadcrumbItem>
-                  <ArrowUpIcon />
+                  <ArrowUpIcon color={'#434343'}/>
                 </Breadcrumb>
               </Spacer>
               <Spacer>

@@ -1,6 +1,6 @@
 import { } from 'react'
 import './App.css'
-import { Heading, Text, Box, Image, Divider, Button, ChakraProvider } from '@chakra-ui/react'
+import { Heading, Text, Box, Image, Divider, Button, ButtonGroup, ChakraProvider, Stack } from '@chakra-ui/react'
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -9,6 +9,7 @@ import {
 } from '@chakra-ui/react'
 import { Flex, Spacer } from '@chakra-ui/react'
 import { ArrowUpIcon } from '@chakra-ui/icons'
+import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
 import AppForm from './Form/AppForm'
 
 
@@ -24,9 +25,10 @@ function App() {
 
           {/* NAVBAR */}
 
-          <Flex justifyContent={'space-between'} marginBottom={100} id='inicio'>
+          <Flex marginBottom={100} id='inicio'>
             <Spacer>
-              <Breadcrumb fontSize={10} separator=''>
+              <Breadcrumb fontSize={12} separator=''>
+
                 <Spacer>
 
                   <BreadcrumbItem margin={5} >
@@ -36,38 +38,40 @@ function App() {
                 </Spacer>
 
 
-                <Spacer />
-
-                <Flex direction={'column'}>
-                  <Spacer>
-                    <BreadcrumbItem >
-                      <BreadcrumbLink href='#educacion'>EDUCACIÓN</BreadcrumbLink>
-                    </BreadcrumbItem>
-                  </Spacer>
-
-                  <Spacer>
-                    <BreadcrumbItem>
-                      <BreadcrumbLink href='#habilidades'>HABILIDADES</BreadcrumbLink>
-                    </BreadcrumbItem>
-                  </Spacer>
-
-                  <Spacer>
-                    <BreadcrumbItem>
-                      <BreadcrumbLink href='#testimonios'>TESTIMONIOS</BreadcrumbLink>
-                    </BreadcrumbItem>
-                  </Spacer>
-
-                  <Spacer>
-                    <BreadcrumbItem>
-                      <BreadcrumbLink href='#contacto'>CONTACTO</BreadcrumbLink>
-                    </BreadcrumbItem>
-                  </Spacer>
-                </Flex>
-
-                <Spacer />
 
                 <Spacer>
-                  <BreadcrumbItem m={5}>
+
+                  <Flex direction={'column'}>
+                    <Spacer>
+                      <BreadcrumbItem >
+                        <BreadcrumbLink href='#educacion'>EDUCACIÓN</BreadcrumbLink>
+                      </BreadcrumbItem>
+                    </Spacer>
+
+                    <Spacer>
+                      <BreadcrumbItem>
+                        <BreadcrumbLink href='#habilidades'>HABILIDADES</BreadcrumbLink>
+                      </BreadcrumbItem>
+                    </Spacer>
+
+                    <Spacer>
+                      <BreadcrumbItem>
+                        <BreadcrumbLink href='#testimonios'>TESTIMONIOS</BreadcrumbLink>
+                      </BreadcrumbItem>
+                    </Spacer>
+
+                    <Spacer>
+                      <BreadcrumbItem>
+                        <BreadcrumbLink href='#contacto'>CONTACTO</BreadcrumbLink>
+                      </BreadcrumbItem>
+                    </Spacer>
+                  </Flex>
+                </Spacer>
+
+
+
+                <Spacer>
+                  <BreadcrumbItem>
                     <BreadcrumbLink href='#'>EN/ES</BreadcrumbLink>
                   </BreadcrumbItem>
                 </Spacer>
@@ -79,19 +83,29 @@ function App() {
 
           {/* TITULO */}
           <Flex direction={'column'}>
-            <Spacer>
-              <Flex direction={'row'}>
-                <Spacer>
+            <Box>
+
+
+              <Flex direction={'row'} maxH={'sm'} alignItems={'flex-start'}>
+                <Box>
+
                   <Heading fontSize={150} marginLeft={10} id='acercaDe'>MATK</Heading>
-                </Spacer>
-                <Spacer>
-                  <Image src='/src/assets/img/LETS TALK.png' alt='Matko' maxW={'2xl'} marginRight={0} />
-                </Spacer>
-                <Spacer>
-                  <Text w={300} fontSize={13}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam nisi cupiditate iste porro tenetur! Aut, distinctio saepe possimus alias sit veritatis repellat deleniti nisi neque eligendi, exercitationem aspernatur praesentium impedit!</Text>
-                </Spacer>
+
+                </Box>
+
+                <Box  >
+
+                  <Image src='/src/assets/img/HablemosEspañol.png' alt='Matko' objectFit={'cover'} boxSize={200} borderRadius={'full'} border={2} borderColor={'blackAlpha.100'}/>
+
+                </Box>
+                <Box>
+
+                  <Text w={300} fontSize={13}>Soy un programador Junior en Desarrollo Web, tengo años de auto educación y recientemente comencé a formarme con cursos certificados en la Universidad Tecnológica Nacional, con el propósito de afianzar mis conocimientos y convertirme en un profesional.</Text>
+
+                </Box>
               </Flex>
-            </Spacer>
+            </Box>
+
             <Heading fontSize={150} marginLeft={10} >NIKCEVICH</Heading>
           </Flex>
 
@@ -103,7 +117,7 @@ function App() {
             </Spacer>
             <Spacer>
               <Text w={400} fontSize={20}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam in et vitae officia saepe vel alias distinctio laborum delectus quia ipsam, dolores aliquid reiciendis! Repudiandae provident vitae amet voluptatum debitis!
+                Con el paso de los años me convertí en una persona capaz de trabajar en grupos, eficaz y trabajadora, con un sentimiento de dedicación hacia lo que hago, que me permite lograrlo sea lo difícil que sea, y me lleve cuanto tiempo me lleve.
               </Text>
             </Spacer>
           </Flex>
@@ -112,7 +126,7 @@ function App() {
 
 
           <Flex marginBottom={10}>
-            <Spacer>Colegio (2013/2018)</Spacer>
+            <Spacer>Colegio Secundario(2013/2018)</Spacer>
             <Spacer>Dr. Carlos Primo López Piacentini - Orientación en Gestión de Empresas y Economía</Spacer>
           </Flex>
 
@@ -147,7 +161,7 @@ function App() {
           <Flex justifyContent={'space-between'}>
             <Flex flexDirection={'column'} w={500}>
               <Text color={'#434343'}>Habilidades blandas</Text>
-              <Text>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique voluptatum totam vitae necessitatibus debitis unde, quod nemo, non ut provident dicta? </Text>
+              <Text>Me considero un gran líder debido a mi capacidad de resolver problemas con eficacia y mi empatía con las personas, asimismo, puedo escuchar y recibir órdenes de un líder y ayudar a mis compañeros para que todos sigamos por el mismo camino.</Text>
             </Flex>
 
             <Flex flexDirection={'column'}>
@@ -164,72 +178,134 @@ function App() {
               <Text>Javascript/React.js</Text>
             </Flex>
           </Flex>
-          <Image src='/src/assets/img/LETS TALK.png' alt='Matko' maxW={'2xl'}/>
+          <Image src='/src/assets/img/LETS TALK.png' alt='Matko' maxW={'2xl'} />
 
+          {/* CARTAS DE TESIMONIOS */}
+          <Heading fontSize={150} id='habilidades' mb={10}>TESTIMONIOS</Heading>
+          <Flex justifyContent={'space-between'}>
+
+            <Card maxW='sm'>
+              <CardBody>
+                <Image
+                  src='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'
+                  alt='Green double couch with wooden legs'
+                  borderRadius='lg'
+                />
+                <Stack mt='6' spacing='3'>
+                  <Heading size='md'>Sophia Aguilar</Heading>
+                  <Text>
+                    This sofa is perfect for modern tropical spaces, baroque inspired
+                    spaces, earthy toned spaces and for people who love a chic design with a
+                    sprinkle of vintage design.
+                  </Text>
+
+                </Stack>
+              </CardBody>
+
+            </Card>
+            <Card maxW='sm'>
+              <CardBody>
+                <Image
+                  src='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'
+                  alt='Green double couch with wooden legs'
+                  borderRadius='lg'
+                />
+                <Stack mt='6' spacing='3'>
+                  <Heading size='md'>Mónica Magallanes</Heading>
+                  <Text>
+                    "Considero a mi hijo como una gran persona, empática, llena de sueños y con muchas ganas de aprender. Logró todo lo que se propuso durante toda su vida debido a su gran dedicación, y estoy segura que podrá lograr todo lo que se dedique con su pasión por el desarrollo web."
+                  </Text>
+
+                </Stack>
+              </CardBody>
+
+            </Card>
+            <Card maxW='sm'>
+              <CardBody>
+                <Image
+                  src='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'
+                  alt='Green double couch with wooden legs'
+                  borderRadius='lg'
+                />
+                <Stack mt='6' spacing='3'>
+                  <Heading size='md'>Emilio Nikcevich</Heading>
+                  <Text>
+                    "Matko tiene una capacidad de razonamiento increíblemetne alta, dispuesto a trabajar en cualquier momento. Desde adolescente me ayudó con las finanzas de la familia, es un gran gestor de la economía y tiene rapidez para solucionar los problemas que se le presentan"
+                  </Text>
+
+                </Stack>
+              </CardBody>
+
+            </Card>
+
+          </Flex>
           {/* CONTACTO */}
 
-          <Flex flexDirection={'column'} alignItems={'center'}>
+          <Flex flexDirection={'column'} alignItems={'center'} mt={10}>
 
             <Text color={'#434343'} id='contacto'>Contáctame</Text>
             <Heading fontSize={50} mb={10}>MATKONIKCE@GMAIL.COM</Heading>
 
           </Flex>
 
-          <AppForm/>
+          <AppForm />
 
-         
+
 
 
           {/* FOOTER */}
 
-          <Flex>
+          <Flex justifyContent={'space-between'} mt={10}>
 
 
-            <Spacer>
 
-              <Flex flexDirection={'column'}>
-                <Spacer>
 
-                  <Text>Argentina</Text>
-                </Spacer>
-                <Spacer>
+            <Flex flexDirection={'column'}>
+              <Spacer>
 
-                  <Text>+54362415075371</Text>
-                </Spacer>
+                <Text>Argentina</Text>
+              </Spacer>
+              <Spacer>
 
-              </Flex>
-            </Spacer>
+                <Text>+54362415075371</Text>
+              </Spacer>
 
-            <Spacer>
-              <Flex >
-                <Spacer >
+            </Flex>
 
-                  <Button>Discord</Button>
-                  <Button>GitHub</Button>
-                  <Button>LinkedIn</Button>
 
-                </Spacer>
-              </Flex>
-            </Spacer>
 
-            <Spacer>
+            <Flex >
 
-              <Flex flexDirection={'column'}  justifyContent={'flex-end'} >
+              <Stack direction={'row'}>
 
-                <Spacer>
-                  <Breadcrumb separator=''>
-                    <BreadcrumbItem >
-                      <BreadcrumbLink href='#inicio' >Inicio de página</BreadcrumbLink>
-                    </BreadcrumbItem>
-                    <ArrowUpIcon />
-                  </Breadcrumb>
-                </Spacer>
-                <Spacer>
-                  <Text>All Rights Reserved</Text>
-                </Spacer>
 
-              </Flex>
-            </Spacer>
+                <Button colorScheme='#1D1D1D' variant='outline' size={'md'} borderRadius={20} _hover={{ bg: 'gray' }}>Discord</Button>
+                <Button colorScheme='#1D1D1D' variant='outline' size={'md'} borderRadius={20} _hover={{ bg: 'gray' }}>GitHub</Button>
+                <Button colorScheme='#1D1D1D' variant='outline' size={'md'} borderRadius={20} _hover={{ bg: 'gray' }}>LinkedIn</Button>
+
+              </Stack>
+
+            </Flex>
+
+
+
+
+            <Flex flexDirection={'column'} justifyContent={'flex-end'} >
+
+              <Spacer>
+                <Breadcrumb separator=''>
+                  <BreadcrumbItem >
+                    <BreadcrumbLink href='#inicio' >Inicio de página</BreadcrumbLink>
+                  </BreadcrumbItem>
+                  <ArrowUpIcon />
+                </Breadcrumb>
+              </Spacer>
+              <Spacer>
+                <Text>All Rights Reserved</Text>
+              </Spacer>
+
+            </Flex>
+
 
           </Flex>
 

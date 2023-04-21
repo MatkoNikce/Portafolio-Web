@@ -71,7 +71,7 @@ function AppForm() {
                         </div>
                         </Spacer>
 
-                        <button type="submit" disabled={isSubmitting}>
+                        <button type="submit" disabled={isSubmitting} >
                             {isSubmitting ? "Enviando..." : "Enviar mensaje"}
                         </button>
 

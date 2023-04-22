@@ -23,7 +23,7 @@ function App() {
 
 
 
-        
+
 
           <Flex marginBottom={100} id='inicio'>
             <Spacer>
@@ -77,7 +77,7 @@ function App() {
           </Flex>
 
 
-        
+
           <Flex direction={'column'}>
             <Box>
 
@@ -105,7 +105,7 @@ function App() {
             <Heading fontSize={150} marginLeft={10} >NIKCEVICH</Heading>
           </Flex>
 
-         
+
 
           <Flex justifyContent={'space-around'} marginBottom={20} >
             <Spacer fontSize={13} color={'#434343'}>
@@ -152,7 +152,7 @@ function App() {
             </Spacer>
           </Flex>
 
-        
+
           <Heading fontSize={150} id='habilidades'>HABILIDADES</Heading>
           <Flex justifyContent={'space-between'}>
             <Flex flexDirection={'column'} w={500}>
@@ -176,7 +176,7 @@ function App() {
           </Flex>
           <Image src='/src/assets/img/matko.jpg' alt='Matko' borderRadius={10} />
 
-         
+
           <Heading fontSize={150} id='testimonios' mb={10}>TESTIMONIOS</Heading>
           <Flex justifyContent={'space-between'}>
 
@@ -184,16 +184,14 @@ function App() {
               <CardBody>
                 <Image
                   src='/src/assets/img/sophi.png'
-                  alt='Green double couch with wooden legs'
+                  alt='Sophia Aguilar'
                   borderRadius='lg'
                   maxH={500}
                 />
                 <Stack mt='6' spacing='3'>
                   <Heading size='md'>Sophia Aguilar</Heading>
                   <Text>
-                    This sofa is perfect for modern tropical spaces, baroque inspired
-                    spaces, earthy toned spaces and for people who love a chic design with a
-                    sprinkle of vintage design.
+                    "Matko es un chico proactivo, con ganas de crecer y desarrollarse profesionalmente en este mundo del desarrollo web. Diría que sus cualidades más importantes son la honestidad, la responsabilidad y el compromiso."
                   </Text>
 
                 </Stack>
@@ -204,7 +202,7 @@ function App() {
               <CardBody>
                 <Image
                   src='/src/assets/img/madre.jpg'
-                  alt='Green double couch with wooden legs'
+                  alt='Monica Magallanes'
                   borderRadius='lg'
                 />
                 <Stack mt='6' spacing='3'>
@@ -221,13 +219,13 @@ function App() {
               <CardBody>
                 <Image
                   src='/src/assets/img/padre.jpg'
-                  alt='Green double couch with wooden legs'
+                  alt='Emilio Nikcevich'
                   borderRadius='lg'
                 />
                 <Stack mt='6' spacing='3'>
                   <Heading size='md'>Emilio Nikcevich</Heading>
                   <Text>
-                    "Matko tiene una capacidad de razonamiento increíblemetne alta, dispuesto a trabajar en cualquier momento. Desde adolescente me ayudó con las finanzas de la familia, es un gran gestor de la economía y tiene rapidez para solucionar los problemas que se le presentan"
+                    "Matko tiene una capacidad de razonamiento increíblemente alta, dispuesto a trabajar en cualquier momento. Desde adolescente me ayudó con las finanzas de la familia, es un gran gestor de la economía y tiene rapidez para solucionar los problemas que se le presentan"
                   </Text>
 
                 </Stack>
@@ -236,7 +234,7 @@ function App() {
             </Card>
 
           </Flex>
-         
+
 
           <Flex flexDirection={'column'} alignItems={'center'} mt={10}>
 
@@ -250,7 +248,7 @@ function App() {
 
 
 
-         
+
 
           <Flex justifyContent={'space-between'} mt={10}>
 

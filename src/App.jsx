@@ -1,6 +1,6 @@
 import { } from 'react'
 import './App.css'
-import { Heading, Text, Box, Image, Divider, Button, ButtonGroup, ChakraProvider, Stack, Link} from '@chakra-ui/react'
+import { Heading, Text, Box, Image, Divider, Button, ButtonGroup, ChakraProvider, Stack, Link } from '@chakra-ui/react'
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -23,7 +23,7 @@ function App() {
 
 
 
-          {/* NAVBAR */}
+        
 
           <Flex marginBottom={100} id='inicio'>
             <Spacer>
@@ -70,14 +70,14 @@ function App() {
 
 
 
-                
-                
+
+
               </Breadcrumb>
             </Spacer>
           </Flex>
 
 
-          {/* TITULO */}
+        
           <Flex direction={'column'}>
             <Box>
 
@@ -105,7 +105,7 @@ function App() {
             <Heading fontSize={150} marginLeft={10} >NIKCEVICH</Heading>
           </Flex>
 
-          {/* EDUCACION */}
+         
 
           <Flex justifyContent={'space-around'} marginBottom={20} >
             <Spacer fontSize={13} color={'#434343'}>
@@ -152,7 +152,7 @@ function App() {
             </Spacer>
           </Flex>
 
-          {/*  ESPECIALIDADES */}
+        
           <Heading fontSize={150} id='habilidades'>HABILIDADES</Heading>
           <Flex justifyContent={'space-between'}>
             <Flex flexDirection={'column'} w={500}>
@@ -174,18 +174,19 @@ function App() {
               <Text>Javascript/React.js</Text>
             </Flex>
           </Flex>
-          <Image src='/src/assets/img/LETS TALK.png' alt='Matko' maxW={'2xl'} />
+          <Image src='/src/assets/img/matko.jpg' alt='Matko' borderRadius={10} />
 
-          {/* CARTAS DE TESIMONIOS */}
+         
           <Heading fontSize={150} id='testimonios' mb={10}>TESTIMONIOS</Heading>
           <Flex justifyContent={'space-between'}>
 
             <Card maxW='sm'>
               <CardBody>
                 <Image
-                  src='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'
+                  src='/src/assets/img/sophi.png'
                   alt='Green double couch with wooden legs'
                   borderRadius='lg'
+                  maxH={500}
                 />
                 <Stack mt='6' spacing='3'>
                   <Heading size='md'>Sophia Aguilar</Heading>
@@ -202,7 +203,7 @@ function App() {
             <Card maxW='sm'>
               <CardBody>
                 <Image
-                  src='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'
+                  src='/src/assets/img/madre.jpg'
                   alt='Green double couch with wooden legs'
                   borderRadius='lg'
                 />
@@ -219,7 +220,7 @@ function App() {
             <Card maxW='sm'>
               <CardBody>
                 <Image
-                  src='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'
+                  src='/src/assets/img/padre.jpg'
                   alt='Green double couch with wooden legs'
                   borderRadius='lg'
                 />
@@ -235,7 +236,7 @@ function App() {
             </Card>
 
           </Flex>
-          {/* CONTACTO */}
+         
 
           <Flex flexDirection={'column'} alignItems={'center'} mt={10}>
 
@@ -249,7 +250,7 @@ function App() {
 
 
 
-          {/* FOOTER */}
+         
 
           <Flex justifyContent={'space-between'} mt={10}>
 
@@ -274,11 +275,16 @@ function App() {
 
               <Stack direction={'row'}>
 
+                <Link href='https://discord.com/users/Overnite#7484' isExternal>
+                  <Button colorScheme='#1D1D1D' variant='outline' size={'md'} borderRadius={20} _hover={{ bg: 'gray' }}>Discord</Button>
+                </Link>
+                <Link href='https://github.com/MatkoNikce' isExternal>
+                  <Button colorScheme='#1D1D1D' variant='outline' size={'md'} borderRadius={20} _hover={{ bg: 'gray' }}>GitHub</Button>
+                </Link>
 
-                <Button colorScheme='#1D1D1D' variant='outline' size={'md'} borderRadius={20} _hover={{ bg: 'gray' }}>Discord</Button>
-                <Button colorScheme='#1D1D1D' variant='outline' size={'md'} borderRadius={20} _hover={{ bg: 'gray' }}>GitHub</Button>
-                <Button colorScheme='#1D1D1D' variant='outline' size={'md'} borderRadius={20} _hover={{ bg: 'gray' }}>LinkedIn</Button>
-
+                <Link href='https://www.linkedin.com/in/matko-nikcevich-b47942258/' isExternal>
+                  <Button colorScheme='#1D1D1D' variant='outline' size={'md'} borderRadius={20} _hover={{ bg: 'gray' }}>LinkedIn</Button>
+                </Link>
               </Stack>
 
             </Flex>
@@ -293,7 +299,7 @@ function App() {
                   <BreadcrumbItem >
                     <BreadcrumbLink href='#inicio' color={'#434343'} >Inicio de página</BreadcrumbLink>
                   </BreadcrumbItem>
-                  <ArrowUpIcon color={'#434343'}/>
+                  <ArrowUpIcon color={'#434343'} />
                 </Breadcrumb>
               </Spacer>
               <Spacer>
